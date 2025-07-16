@@ -1,7 +1,7 @@
 from django.urls import path
 # Import views
-from .views import ProcessExcelView
+from .views import ExcelAgentView
 
 urlpatterns = [
-    path('process/', ProcessExcelView.as_view(), name='Process excel'),
+    path('process/', ExcelAgentView.as_view(), name='Process excel'),
 ]
