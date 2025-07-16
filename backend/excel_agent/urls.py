@@ -5,4 +5,3 @@ from .views import ProcessExcelView
 urlpatterns = [
     path('process/', ProcessExcelView.as_view(), name='Process excel'),
 ]
-
