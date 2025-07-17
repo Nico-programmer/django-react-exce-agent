@@ -12,6 +12,9 @@ os.makedirs(media_dir, exist_ok=True)
 class ExcelAgentView(APIView):
     parser_classes = [MultiPartParser]
     
+    def get(self, request):
+        return Response({"message": "Este endpoint solo acepta POST con un archivo y una instrucción"}, status=200)
+    
     def post(self, request):
         file = request.FILES.get('file')
         instruction = request.data.get('instruction')

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Corsheader
     'corsheaders',
+    # RestFramework
     # App's
     'excel_agent',
 ]
